@@ -1,0 +1,24 @@
+[7.104s] Invoking command in '/home/lee/robotica/guia5/TurtleBot_E1/src/frontier_explorer_e1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/frontier_explorer_e1 build --build-base /home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/build install --record /home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/install.log --install-scripts $base/lib/frontier_explorer_e1 --single-version-externally-managed install_data
+[8.776s] running egg_info
+[9.108s] writing ../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/PKG-INFO
+[9.114s] writing dependency_links to ../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/dependency_links.txt
+[9.115s] writing entry points to ../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/entry_points.txt
+[9.116s] writing requirements to ../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/requires.txt
+[9.116s] writing top-level names to ../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/top_level.txt
+[9.270s] reading manifest file '../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/SOURCES.txt'
+[9.275s] writing manifest file '../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info/SOURCES.txt'
+[9.275s] running build
+[9.276s] running build_py
+[9.287s] copying frontier_explorer_e1/frontier_explorer.py -> /home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/build/lib/frontier_explorer_e1
+[9.289s] running install
+[9.329s] running install_lib
+[9.425s] copying /home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/build/lib/frontier_explorer_e1/frontier_explorer.py -> /home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/python3.12/site-packages/frontier_explorer_e1
+[9.429s] byte-compiling /home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/python3.12/site-packages/frontier_explorer_e1/frontier_explorer.py to frontier_explorer.cpython-312.pyc
+[9.436s] running install_data
+[9.436s] running install_egg_info
+[9.526s] removing '/home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/python3.12/site-packages/frontier_explorer_e1-0.0.0-py3.12.egg-info' (and everything under it)
+[9.590s] Copying ../../build/frontier_explorer_e1/frontier_explorer_e1.egg-info to /home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/python3.12/site-packages/frontier_explorer_e1-0.0.0-py3.12.egg-info
+[9.598s] running install_scripts
+[9.774s] Installing explorer script to /home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/frontier_explorer_e1
+[9.776s] writing list of installed files to '/home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/install.log'
+[9.930s] Invoked command in '/home/lee/robotica/guia5/TurtleBot_E1/src/frontier_explorer_e1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia5/TurtleBot_E1/install/frontier_explorer_e1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/frontier_explorer_e1 build --build-base /home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/build install --record /home/lee/robotica/guia5/TurtleBot_E1/build/frontier_explorer_e1/install.log --install-scripts $base/lib/frontier_explorer_e1 --single-version-externally-managed install_data

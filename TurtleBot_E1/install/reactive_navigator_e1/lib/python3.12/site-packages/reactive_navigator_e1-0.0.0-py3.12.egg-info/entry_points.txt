@@ -1,0 +1,2 @@
+[console_scripts]
+navigator = reactive_navigator_e1.navigator:main
