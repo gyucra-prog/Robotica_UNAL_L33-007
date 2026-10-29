@@ -2,9 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import deque
 
-# =========================
 # MAPA DE OCUPACIÓN
-# =========================
 SIZE = 20
 
 grid = np.zeros((SIZE, SIZE), dtype=int)
@@ -13,9 +11,7 @@ grid[8:12, 5:15] = 1
 start = (18, 18)
 goal = (2, 2)
 
-# =========================
 # DISTANCE TRANSFORM
-# =========================
 dist = np.full((SIZE, SIZE), np.inf)
 
 dist[goal[1], goal[0]] = 0
@@ -38,9 +34,7 @@ while queue:
             dist[ny, nx] = dist[y, x] + 1
             queue.append((nx, ny))
 
-# =========================
 # EXTRAER LA TRAYECTORIA
-# =========================
 path = [start]
 pos = start
 
@@ -72,9 +66,7 @@ for _ in range(SIZE * SIZE):
 
 path = np.array(path)
 
-# =========================
 # RESULTADOS
-# =========================
 if tuple(path[-1]) == goal:
     print("Objetivo alcanzado.")
     print(f"Distancia óptima: {int(dist[start[1], start[0]])} movimientos")
@@ -82,9 +74,7 @@ if tuple(path[-1]) == goal:
 else:
     print("No se pudo alcanzar el objetivo.")
 
-# =========================
 # VISUALIZACIÓN
-# =========================
 plt.figure(figsize=(9, 7))
 
 distance_map = np.ma.masked_where(grid == 1, dist)
