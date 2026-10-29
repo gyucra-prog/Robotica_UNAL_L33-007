@@ -2,9 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import deque
 
-# =====================================
 # 1. MAPA DE OCUPACIÓN
-# =====================================
 SIZE = 30
 grid = np.zeros((SIZE, SIZE), dtype=int)
 
@@ -30,9 +28,7 @@ grid[goal[1], goal[0]] = 0
 # Movimientos permitidos: arriba, abajo, izquierda, derecha
 MOVES = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-# =====================================
 # 2. DISTANCE TRANSFORM MEDIANTE BFS
-# =====================================
 dist = np.full((SIZE, SIZE), np.inf)
 dist[goal[1], goal[0]] = 0
 
@@ -54,9 +50,7 @@ while queue:
             dist[ny, nx] = dist[y, x] + 1
             queue.append((nx, ny))
 
-# =====================================
 # 3. EXTRAER LA RUTA ÓPTIMA
-# =====================================
 path = [start]
 pos = start
 
@@ -88,9 +82,7 @@ for _ in range(SIZE * SIZE):
 
 path = np.array(path)
 
-# =====================================
 # 4. RESULTADOS
-# =====================================
 reached = tuple(path[-1]) == goal
 
 print("\n===== RESULTADOS DISTANCE TRANSFORM =====")
@@ -106,9 +98,7 @@ if reached:
 else:
     print("Estado: no se encontró una ruta al objetivo")
 
-# =====================================
 # 5. VISUALIZACIÓN
-# =====================================
 fig, ax = plt.subplots(figsize=(11, 9))
 
 # Mapa de distancias; los obstáculos quedan enmascarados
