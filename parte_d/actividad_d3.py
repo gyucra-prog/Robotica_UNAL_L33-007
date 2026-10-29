@@ -2,9 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import deque
 
-# ==========================================
 # 1. MAPA DE OCUPACIÓN
-# ==========================================
 SIZE = 40
 grid = np.zeros((SIZE, SIZE), dtype=int)
 
@@ -43,9 +41,7 @@ grid[goal[1], goal[0]] = 0
 
 MOVES = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-# ==========================================
 # 2. DISTANCE TRANSFORM MEDIANTE BFS
-# ==========================================
 dist = np.full((SIZE, SIZE), np.inf)
 dist[goal[1], goal[0]] = 0
 
@@ -67,9 +63,7 @@ while queue:
             dist[ny, nx] = dist[y, x] + 1
             queue.append((nx, ny))
 
-# ==========================================
 # 3. EXTRAER LA TRAYECTORIA
-# ==========================================
 path = [start]
 pos = start
 
@@ -101,9 +95,7 @@ for _ in range(SIZE * SIZE):
 path = np.array(path)
 reached = tuple(path[-1]) == goal
 
-# ==========================================
 # 4. RESULTADOS
-# ==========================================
 print("\n===== DISTANCE TRANSFORM =====")
 print(f"Tamaño del mapa: {SIZE} x {SIZE}")
 print(f"Inicio: {start}")
@@ -117,9 +109,7 @@ if reached:
 else:
     print("Estado: no se encontró una trayectoria completa")
 
-# ==========================================
 # 5. VISUALIZACIÓN
-# ==========================================
 fig, ax = plt.subplots(figsize=(12, 10))
 
 distance_map = np.ma.masked_where(grid == 1, dist)
