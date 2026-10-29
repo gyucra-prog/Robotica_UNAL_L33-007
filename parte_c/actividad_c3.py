@@ -2,10 +2,7 @@ import heapq
 import numpy as np
 import matplotlib.pyplot as plt
 
-# ==========================================
 # 1. CREAR EL MAPA
-# ==========================================
-
 SIZE = 30
 grid = np.zeros((SIZE, SIZE), dtype=int)
 
@@ -25,19 +22,11 @@ grid[4:8, 23:25] = 0
 start = (1, 15)
 goal = (28, 15)
 
-
-# ==========================================
 # 2. HEURÍSTICA MANHATTAN
-# ==========================================
-
 def heuristic(a, b):
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
 
-
-# ==========================================
 # 3. ALGORITMO A*
-# ==========================================
-
 def astar(grid, start, goal):
     open_list = []
     heapq.heappush(
@@ -112,18 +101,10 @@ def astar(grid, start, goal):
 
     return path, cost[goal]
 
-
-# ==========================================
 # 4. CALCULAR LA RUTA
-# ==========================================
-
 path, total_cost = astar(grid, start, goal)
 
-
-# ==========================================
 # 5. VISUALIZAR RESULTADOS
-# ==========================================
-
 plt.figure(figsize=(11, 9))
 
 plt.imshow(
@@ -181,11 +162,7 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-
-# ==========================================
 # 6. RESULTADOS
-# ==========================================
-
 if path:
     print("Ruta encontrada: sí")
     print("Inicio:", start)
