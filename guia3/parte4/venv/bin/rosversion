@@ -1,0 +1,6 @@
+#!/home/lee/robotica/guia3/parte4/venv/bin/python3
+import sys
+from rospkg.rosversion import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())
