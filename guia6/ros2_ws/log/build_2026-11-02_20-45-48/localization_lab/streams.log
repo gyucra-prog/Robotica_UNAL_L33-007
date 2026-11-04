@@ -1,0 +1,44 @@
+[2.037s] Invoking command in '/home/lee/robotica/guia6/ros2_ws/src/localization_lab': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/localization_lab build --build-base /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build install --record /home/lee/robotica/guia6/ros2_ws/build/localization_lab/install.log --install-scripts $base/lib/localization_lab --single-version-externally-managed install_data
+[2.363s] running egg_info
+[2.364s] creating ../../build/localization_lab/localization_lab.egg-info
+[2.526s] writing ../../build/localization_lab/localization_lab.egg-info/PKG-INFO
+[2.527s] writing dependency_links to ../../build/localization_lab/localization_lab.egg-info/dependency_links.txt
+[2.527s] writing entry points to ../../build/localization_lab/localization_lab.egg-info/entry_points.txt
+[2.528s] writing requirements to ../../build/localization_lab/localization_lab.egg-info/requires.txt
+[2.528s] writing top-level names to ../../build/localization_lab/localization_lab.egg-info/top_level.txt
+[2.529s] writing manifest file '../../build/localization_lab/localization_lab.egg-info/SOURCES.txt'
+[2.583s] reading manifest file '../../build/localization_lab/localization_lab.egg-info/SOURCES.txt'
+[2.583s] writing manifest file '../../build/localization_lab/localization_lab.egg-info/SOURCES.txt'
+[2.584s] running build
+[2.584s] running build_py
+[2.584s] creating /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build
+[2.584s] creating /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib
+[2.585s] creating /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab
+[2.585s] copying localization_lab/__init__.py -> /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab
+[2.585s] copying localization_lab/simple_controller.py -> /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab
+[2.586s] running install
+[2.592s] running install_lib
+[2.619s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab
+[2.620s] copying /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab/__init__.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab
+[2.620s] copying /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab/simple_controller.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab
+[2.621s] byte-compiling /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab/__init__.py to __init__.cpython-312.pyc
+[2.623s] byte-compiling /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab/simple_controller.py to simple_controller.cpython-312.pyc
+[2.623s] running install_data
+[2.623s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index
+[2.623s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index
+[2.623s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index/packages
+[2.624s] copying resource/localization_lab -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index/packages
+[2.624s] copying package.xml -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab
+[2.624s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/launch
+[2.625s] copying launch/cartographer.launch.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/launch
+[2.625s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+[2.625s] copying config/map_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+[2.626s] copying config/trajectory_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+[2.627s] copying config/cartographer.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+[2.628s] creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/rviz
+[2.628s] running install_egg_info
+[2.657s] Copying ../../build/localization_lab/localization_lab.egg-info to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab-0.0.0-py3.12.egg-info
+[2.658s] running install_scripts
+[2.729s] Installing simple_controller script to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/localization_lab
+[2.729s] writing list of installed files to '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/install.log'
+[2.780s] Invoked command in '/home/lee/robotica/guia6/ros2_ws/src/localization_lab' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/localization_lab build --build-base /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build install --record /home/lee/robotica/guia6/ros2_ws/build/localization_lab/install.log --install-scripts $base/lib/localization_lab --single-version-externally-managed install_data

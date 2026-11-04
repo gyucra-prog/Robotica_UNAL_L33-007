@@ -1,0 +1,24 @@
+[2.307s] Invoking command in '/home/lee/robotica/guia6/ros2_ws/src/localization_lab': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/localization_lab build --build-base /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build install --record /home/lee/robotica/guia6/ros2_ws/build/localization_lab/install.log --install-scripts $base/lib/localization_lab --single-version-externally-managed install_data
+[3.349s] running egg_info
+[3.657s] writing ../../build/localization_lab/localization_lab.egg-info/PKG-INFO
+[3.658s] writing dependency_links to ../../build/localization_lab/localization_lab.egg-info/dependency_links.txt
+[3.658s] writing entry points to ../../build/localization_lab/localization_lab.egg-info/entry_points.txt
+[3.659s] writing requirements to ../../build/localization_lab/localization_lab.egg-info/requires.txt
+[3.659s] writing top-level names to ../../build/localization_lab/localization_lab.egg-info/top_level.txt
+[3.830s] reading manifest file '../../build/localization_lab/localization_lab.egg-info/SOURCES.txt'
+[3.832s] writing manifest file '../../build/localization_lab/localization_lab.egg-info/SOURCES.txt'
+[3.832s] running build
+[3.832s] running build_py
+[3.832s] copying localization_lab/simple_controller.py -> /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab
+[3.836s] running install
+[3.846s] running install_lib
+[3.895s] copying /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build/lib/localization_lab/simple_controller.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab
+[3.897s] byte-compiling /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab/simple_controller.py to simple_controller.cpython-312.pyc
+[3.898s] running install_data
+[3.899s] running install_egg_info
+[3.976s] removing '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab-0.0.0-py3.12.egg-info' (and everything under it)
+[3.976s] Copying ../../build/localization_lab/localization_lab.egg-info to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization_lab-0.0.0-py3.12.egg-info
+[3.978s] running install_scripts
+[4.119s] Installing simple_controller script to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/localization_lab
+[4.120s] writing list of installed files to '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/install.log'
+[4.201s] Invoked command in '/home/lee/robotica/guia6/ros2_ws/src/localization_lab' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/localization_lab build --build-base /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build install --record /home/lee/robotica/guia6/ros2_ws/build/localization_lab/install.log --install-scripts $base/lib/localization_lab --single-version-externally-managed install_data
