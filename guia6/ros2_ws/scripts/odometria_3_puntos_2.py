@@ -2,10 +2,7 @@ from roboticstoolbox import Bicycle
 import numpy as np
 import matplotlib.pyplot as plt
 
-# =========================================
 # 1. Configuración del robot y ruido
-# =========================================
-
 dt = 0.1  # Paso de tiempo de integración (s)
 V = np.diag([0.05, np.deg2rad(0.5)])**2  # Varianza ajustada a escala temporal
 
@@ -13,10 +10,7 @@ V = np.diag([0.05, np.deg2rad(0.5)])**2  # Varianza ajustada a escala temporal
 robot_ruidoso = Bicycle(covar=V, dt=dt)
 robot_ideal = Bicycle(covar=np.zeros((2, 2)), dt=dt)
 
-# =========================================
 # 2. Definición de puntos y estado inicial
-# =========================================
-
 puntos = np.array([
     [4.0, 0.0],
     [4.0, 3.0],
@@ -29,20 +23,14 @@ pose_ideal = np.array([0.0, 0.0, 0.0])
 trayectoria_real = [pose_real.copy()]
 trayectoria_ideal = [pose_ideal.copy()]
 
-# =========================================
 # 3. Parámetros del controlador
-# =========================================
-
 velocidad = 0.5            # m/s
 distancia_minima = 0.25     # Tolerancia aumentada para garantizar captura
 gamma_max = np.deg2rad(30) # Ángulo máximo de dirección
 K_p = 2.0                  # Ganancia proporcional de dirección
 max_iter_por_punto = 500   # Evita bucles infinitos por seguridad
 
-# =========================================
 # 4. Bucle de control
-# =========================================
-
 for i, punto in enumerate(puntos):
     iteraciones = 0
     
@@ -84,18 +72,12 @@ for i, punto in enumerate(puntos):
 trayectoria_ideal = np.array(trayectoria_ideal)
 trayectoria_real = np.array(trayectoria_real)
 
-# =========================================
 # 5. Cálculo del error acumulado
-# =========================================
-
 error_x = trayectoria_real[:, 0] - trayectoria_ideal[:, 0]
 error_y = trayectoria_real[:, 1] - trayectoria_ideal[:, 1]
 error_posicion = np.sqrt(error_x**2 + error_y**2)
 
-# =========================================
 # 6. Gráficas y Resultados
-# =========================================
-
 plt.figure(figsize=(10, 6))
 plt.plot(trayectoria_ideal[:, 0], trayectoria_ideal[:, 1], label="Robot ideal", linewidth=2)
 plt.plot(trayectoria_real[:, 0], trayectoria_real[:, 1], label="Robot con ruido", linestyle="--", linewidth=2)
