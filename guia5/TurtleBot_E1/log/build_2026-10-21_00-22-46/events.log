@@ -1,0 +1,92 @@
+[0.000000] (-) TimerEvent: {}
+[0.000233] (reactive_navigator_e1) JobQueued: {'identifier': 'reactive_navigator_e1', 'dependencies': OrderedDict()}
+[0.000269] (reactive_navigator_e1) JobStarted: {'identifier': 'reactive_navigator_e1'}
+[0.098106] (-) TimerEvent: {}
+[0.201889] (-) TimerEvent: {}
+[0.303583] (-) TimerEvent: {}
+[0.405713] (-) TimerEvent: {}
+[0.506434] (-) TimerEvent: {}
+[0.607102] (-) TimerEvent: {}
+[0.709076] (-) TimerEvent: {}
+[0.809711] (-) TimerEvent: {}
+[0.910423] (-) TimerEvent: {}
+[1.011587] (-) TimerEvent: {}
+[1.111921] (-) TimerEvent: {}
+[1.212968] (-) TimerEvent: {}
+[1.316697] (-) TimerEvent: {}
+[1.417629] (-) TimerEvent: {}
+[1.520428] (-) TimerEvent: {}
+[1.621591] (-) TimerEvent: {}
+[1.722241] (-) TimerEvent: {}
+[1.822976] (-) TimerEvent: {}
+[1.926270] (-) TimerEvent: {}
+[2.028764] (-) TimerEvent: {}
+[2.129543] (-) TimerEvent: {}
+[2.230185] (-) TimerEvent: {}
+[2.331058] (-) TimerEvent: {}
+[2.436340] (-) TimerEvent: {}
+[2.540827] (-) TimerEvent: {}
+[2.644034] (-) TimerEvent: {}
+[2.744891] (-) TimerEvent: {}
+[2.845598] (-) TimerEvent: {}
+[2.949734] (-) TimerEvent: {}
+[3.052916] (-) TimerEvent: {}
+[3.156984] (-) TimerEvent: {}
+[3.257460] (-) TimerEvent: {}
+[3.358366] (-) TimerEvent: {}
+[3.458849] (-) TimerEvent: {}
+[3.559878] (-) TimerEvent: {}
+[3.605034] (reactive_navigator_e1) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/reactive_navigator_e1', 'build', '--build-base', '/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build', 'install', '--record', '/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/install.log', '--install-scripts', '$base/lib/reactive_navigator_e1', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/lee/robotica/guia5/TurtleBot_E1/src/reactive_navigator_e1', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'lee', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lee', 'OLDPWD': '/home/lee/robotica/guia5/TurtleBot_E1/src/reactive_navigator_e1', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/lee/.nvm/versions/node/v24.21.0/bin', 'NVM_INC': '/home/lee/.nvm/versions/node/v24.21.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2887', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'NVM_DIR': '/home/lee/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lee/robotica/TurtleBot/install:/home/lee/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lee', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/go/bin:/home/lee/go/bin:/home/lee/.nvm/versions/node/v24.21.0/bin:/home/lee/go/bin:/home/lee/go/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/lee/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lee/.local/bin', 'SESSION_MANAGER': 'local/lee-VMware-Virtual-Platform:@/tmp/.ICE-unix/2685,unix/lee-VMware-Virtual-Platform:/tmp/.ICE-unix/2685', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/b18a79e3_7c21_4e52_8840_c3391ed4ed1a', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.B03KX3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.157', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lee/robotica/TurtleBot/install/tb3_control:/home/lee/robotica/TurtleBot/install/reactive_navigator:/home/lee/robotica/TurtleBot/install/lab_robotica:/home/lee/ros2_ws/install/pose_lab:/home/lee/ros2_ws/install/imu_orientation2:/home/lee/ros2_ws/install/imu_orientation:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages:/home/lee/robotica/TurtleBot/install/tb3_control/lib/python3.12/site-packages:/home/lee/robotica/TurtleBot/install/reactive_navigator/lib/python3.12/site-packages:/home/lee/robotica/TurtleBot/build/lab_robotica:/home/lee/robotica/TurtleBot/install/lab_robotica/lib/python3.12/site-packages:/home/lee/ros2_ws/install/pose_lab/lib/python3.12/site-packages:/home/lee/ros2_ws/install/imu_orientation2/lib/python3.12/site-packages:/home/lee/ros2_ws/install/imu_orientation/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[3.660479] (-) TimerEvent: {}
+[3.761332] (-) TimerEvent: {}
+[3.862036] (-) TimerEvent: {}
+[3.967755] (-) TimerEvent: {}
+[4.071539] (-) TimerEvent: {}
+[4.173144] (-) TimerEvent: {}
+[4.275082] (-) TimerEvent: {}
+[4.375531] (-) TimerEvent: {}
+[4.397740] (reactive_navigator_e1) StdoutLine: {'line': b'running egg_info\n'}
+[4.398498] (reactive_navigator_e1) StdoutLine: {'line': b'creating ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info\n'}
+[4.475782] (-) TimerEvent: {}
+[4.577438] (-) TimerEvent: {}
+[4.602281] (reactive_navigator_e1) StdoutLine: {'line': b'writing ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/PKG-INFO\n'}
+[4.603757] (reactive_navigator_e1) StdoutLine: {'line': b'writing dependency_links to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/dependency_links.txt\n'}
+[4.604078] (reactive_navigator_e1) StdoutLine: {'line': b'writing entry points to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/entry_points.txt\n'}
+[4.604158] (reactive_navigator_e1) StdoutLine: {'line': b'writing requirements to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/requires.txt\n'}
+[4.604230] (reactive_navigator_e1) StdoutLine: {'line': b'writing top-level names to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/top_level.txt\n'}
+[4.604770] (reactive_navigator_e1) StdoutLine: {'line': b"writing manifest file '../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/SOURCES.txt'\n"}
+[4.677680] (-) TimerEvent: {}
+[4.703276] (reactive_navigator_e1) StdoutLine: {'line': b"reading manifest file '../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/SOURCES.txt'\n"}
+[4.705531] (reactive_navigator_e1) StdoutLine: {'line': b"writing manifest file '../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/SOURCES.txt'\n"}
+[4.705933] (reactive_navigator_e1) StdoutLine: {'line': b'running build\n'}
+[4.706070] (reactive_navigator_e1) StdoutLine: {'line': b'running build_py\n'}
+[4.706146] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build\n'}
+[4.706812] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build/lib\n'}
+[4.707304] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build/lib/reactive_navigator_e1\n'}
+[4.707909] (reactive_navigator_e1) StdoutLine: {'line': b'copying reactive_navigator_e1/__init__.py -> /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build/lib/reactive_navigator_e1\n'}
+[4.708622] (reactive_navigator_e1) StdoutLine: {'line': b'copying reactive_navigator_e1/navigator.py -> /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build/lib/reactive_navigator_e1\n'}
+[4.709451] (reactive_navigator_e1) StdoutLine: {'line': b'running install\n'}
+[4.721251] (reactive_navigator_e1) StdoutLine: {'line': b'running install_lib\n'}
+[4.771978] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1\n'}
+[4.772169] (reactive_navigator_e1) StdoutLine: {'line': b'copying /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build/lib/reactive_navigator_e1/__init__.py -> /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1\n'}
+[4.772251] (reactive_navigator_e1) StdoutLine: {'line': b'copying /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build/lib/reactive_navigator_e1/navigator.py -> /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1\n'}
+[4.773053] (reactive_navigator_e1) StdoutLine: {'line': b'byte-compiling /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1/__init__.py to __init__.cpython-312.pyc\n'}
+[4.773231] (reactive_navigator_e1) StdoutLine: {'line': b'byte-compiling /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1/navigator.py to navigator.cpython-312.pyc\n'}
+[4.775765] (reactive_navigator_e1) StdoutLine: {'line': b'running install_data\n'}
+[4.775950] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/share/ament_index\n'}
+[4.776029] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/share/ament_index/resource_index\n'}
+[4.776102] (reactive_navigator_e1) StdoutLine: {'line': b'creating /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/share/ament_index/resource_index/packages\n'}
+[4.776172] (reactive_navigator_e1) StdoutLine: {'line': b'copying resource/reactive_navigator_e1 -> /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/share/ament_index/resource_index/packages\n'}
+[4.776262] (reactive_navigator_e1) StdoutLine: {'line': b'copying package.xml -> /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/share/reactive_navigator_e1\n'}
+[4.776333] (reactive_navigator_e1) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.777784] (-) TimerEvent: {}
+[4.826930] (reactive_navigator_e1) StdoutLine: {'line': b'Copying ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info to /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1-0.0.0-py3.12.egg-info\n'}
+[4.827126] (reactive_navigator_e1) StdoutLine: {'line': b'running install_scripts\n'}
+[4.878828] (-) TimerEvent: {}
+[4.979738] (-) TimerEvent: {}
+[5.006832] (reactive_navigator_e1) StdoutLine: {'line': b'Installing navigator script to /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/reactive_navigator_e1\n'}
+[5.007821] (reactive_navigator_e1) StdoutLine: {'line': b"writing list of installed files to '/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/install.log'\n"}
+[5.080694] (-) TimerEvent: {}
+[5.084040] (reactive_navigator_e1) CommandEnded: {'returncode': 0}
+[5.141266] (reactive_navigator_e1) JobEnded: {'identifier': 'reactive_navigator_e1', 'rc': 0}
+[5.141987] (-) EventReactorShutdown: {}

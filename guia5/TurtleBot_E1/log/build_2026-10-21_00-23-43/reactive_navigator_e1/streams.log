@@ -1,0 +1,21 @@
+[2.297s] Invoking command in '/home/lee/robotica/guia5/TurtleBot_E1/src/reactive_navigator_e1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reactive_navigator_e1 build --build-base /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build install --record /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/install.log --install-scripts $base/lib/reactive_navigator_e1 --single-version-externally-managed install_data
+[2.978s] running egg_info
+[3.279s] writing ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/PKG-INFO
+[3.280s] writing dependency_links to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/dependency_links.txt
+[3.281s] writing entry points to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/entry_points.txt
+[3.281s] writing requirements to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/requires.txt
+[3.281s] writing top-level names to ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/top_level.txt
+[3.380s] reading manifest file '../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/SOURCES.txt'
+[3.380s] writing manifest file '../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info/SOURCES.txt'
+[3.381s] running build
+[3.382s] running build_py
+[3.384s] running install
+[3.392s] running install_lib
+[3.434s] running install_data
+[3.435s] running install_egg_info
+[3.483s] removing '/home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1-0.0.0-py3.12.egg-info' (and everything under it)
+[3.484s] Copying ../../build/reactive_navigator_e1/reactive_navigator_e1.egg-info to /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages/reactive_navigator_e1-0.0.0-py3.12.egg-info
+[3.486s] running install_scripts
+[3.601s] Installing navigator script to /home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/reactive_navigator_e1
+[3.602s] writing list of installed files to '/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/install.log'
+[3.677s] Invoked command in '/home/lee/robotica/guia5/TurtleBot_E1/src/reactive_navigator_e1' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia5/TurtleBot_E1/install/reactive_navigator_e1/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/reactive_navigator_e1 build --build-base /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/build install --record /home/lee/robotica/guia5/TurtleBot_E1/build/reactive_navigator_e1/install.log --install-scripts $base/lib/reactive_navigator_e1 --single-version-externally-managed install_data
