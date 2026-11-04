@@ -1,13 +1,8 @@
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 from roboticstoolbox import Bicycle, EKF
 
-# ==========================================
 # 1. CONFIGURACION
-# ==========================================
-
 V = np.diag([
     0.02,
     np.deg2rad(0.5)
@@ -19,10 +14,7 @@ robot = Bicycle(
     workspace=10
 )
 
-# ==========================================
 # 2. DEFINIR LOS CUATRO PUNTOS
-# ==========================================
-
 puntos = np.array([
     [2.0, 2.0],
     [8.0, 2.0],
@@ -30,10 +22,7 @@ puntos = np.array([
     [2.0, 8.0]
 ])
 
-# ==========================================
 # 3. CONTROLADOR DE WAYPOINTS
-# ==========================================
-
 indice = 0
 
 def control_waypoints(robot, t, x):
@@ -91,35 +80,23 @@ def control_waypoints(robot, t, x):
 
 robot.control = control_waypoints
 
-# ==========================================
 # 4. COVARIANZA INICIAL
-# ==========================================
-
 P0 = np.diag([
     0.05,
     0.05,
     np.deg2rad(0.5)
 ])**2
 
-# ==========================================
 # 5. CREAR EKF
-# ==========================================
-
 ekf = EKF(
     robot=(robot, V),
     P0=P0
 )
 
-# ==========================================
 # 6. EJECUTAR SIMULACION
-# ==========================================
-
 ekf.run(T=40)
 
-# ==========================================
 # 7. GRAFICAR TRAYECTORIAS
-# ==========================================
-
 plt.figure(figsize=(10, 8))
 
 robot.plot_xy(color='blue', label="Ideal")
@@ -146,10 +123,7 @@ plt.ylabel('Y [m]')
 plt.grid()
 plt.legend()
 
-# ==========================================
 # 8. INCERTIDUMBRE
-# ==========================================
-
 plt.figure(figsize=(10, 5))
 
 plt.plot(
