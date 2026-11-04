@@ -2,18 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from roboticstoolbox import Bicycle, EKF, LandmarkMap, RangeBearingSensor
  
-# =============================================================================
 # 1. Trayectoria deseada (waypoints). Forma: [[x0, x1, x2], [y0, y1, y2]]
-# =============================================================================
 waypoints = np.array([
     [0.0, 5.0, 10.0],   # X
     [0.0, 8.0,  2.0],   # Y
-    [0.0, 12.0,  3.0],
 ])
  
-# =============================================================================
 # 2. Parámetros de simulación
-# =============================================================================
 T = 25.0                                        # tiempo de simulación [s]
 V = np.diag([0.02, np.deg2rad(0.5)]) ** 2       # covarianza de odometría
 W = np.diag([0.10, np.deg2rad(1.0)]) ** 2       # covarianza del sensor (rango, rumbo)
@@ -21,23 +16,11 @@ P0 = np.diag([0.05, 0.05, np.deg2rad(0.5)]) ** 2  # incertidumbre inicial
 x0 = np.array([waypoints[0, 0], waypoints[1, 0], 0.0])  # [x, y, theta]
 WORKSPACE = [-2, 12]                            # área de trabajo (x e y)
  
-# Mapa de landmarks (conocido) para que el EKF pueda corregirse
+# Mapa de landmarks para que el EKF pueda corregirse
 landmark_map = LandmarkMap(20, workspace=WORKSPACE, seed=0)
- 
- 
-# =============================================================================
+
 # 3. Controlador de persecución de punto
-# =============================================================================
-class WaypointController:
-    """
-    Persecución de punto sobre una lista de waypoints.
- 
-    - Usa la POSE ESTIMADA por el EKF (no la real), como en un robot real.
-    - Se reinicia solo al comenzar cada simulación (t == 0), por lo que se
-      puede volver a ejecutar sin reiniciar el kernel.
-    - Firma compatible con Vehicle: f(vehicle, t, x).
-    """
- 
+class WaypointController: 
     def __init__(self, waypoints, v_max=1.0, capture_radius=0.8,
                  goal_tol=0.3, gamma_max=np.pi / 4):
         self.wp = waypoints
@@ -82,10 +65,7 @@ class WaypointController:
         gamma = np.clip(heading_error, -self.gamma_max, self.gamma_max)
         return np.array([v, gamma])
  
- 
-# =============================================================================
 # 4. Simulación: con sensor (localización con mapa) o solo odometría
-# =============================================================================
 def simulate(use_sensor):
     robot = Bicycle(covar=V, x0=x0, workspace=WORKSPACE, animation=None)
     controller = WaypointController(waypoints)
@@ -107,10 +87,7 @@ def simulate(use_sensor):
 robot, ekf = simulate(use_sensor=True)         # EKF con corrección por sensor
 robot_dr, ekf_dr = simulate(use_sensor=False)  # referencia: solo odometría
  
- 
-# =============================================================================
 # 5. Extracción de datos
-# =============================================================================
 def extract(robot, ekf):
     real = np.asarray(robot.x_hist)             # (N, 3) pose real
     est = ekf.get_xyt()                         # (N, 3) pose estimada
@@ -131,9 +108,7 @@ for name, r, e in (("EKF + sensor", real, err), ("Solo odometría", real_dr, err
           f"dist. final al objetivo: {d_end:5.2f} m | "
           f"error de estimación medio: {e.mean():5.3f} m, final: {e[-1]:5.3f} m")
  
-# =============================================================================
 # 6. Gráfica 1: trayectorias (ideal vs real vs estimada por EKF)
-# =============================================================================
 plt.figure(figsize=(9, 7))
 plt.plot(waypoints[0], waypoints[1], 'k--', linewidth=1.5, label='Trayectoria ideal (waypoints)')
 plt.plot(real[:, 0], real[:, 1], 'b-', linewidth=2, label='Trayectoria real')
@@ -158,9 +133,7 @@ plt.legend(loc='best', fontsize=8)
 plt.grid(True)
 plt.axis('equal')
  
-# =============================================================================
 # 7. Gráfica 2: incertidumbre y error de estimación
-# =============================================================================
 fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 7), sharex=True)
  
 ax1.semilogy(t, pnorm, linewidth=2, color='purple', label='EKF + sensor')
