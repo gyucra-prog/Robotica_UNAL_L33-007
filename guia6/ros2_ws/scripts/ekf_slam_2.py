@@ -1,12 +1,5 @@
-
-# ==================================================
-# PARTE 4 - EXPERIENCIA VISUAL EKF-SLAM
-# Robot movil explorando un entorno desconocido
-# ==================================================
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 from roboticstoolbox import (
     Bicycle,
     RandomPath,
@@ -15,36 +8,24 @@ from roboticstoolbox import (
     EKF
 )
 
-# ==================================================
 # 1. CONFIGURACION DEL ENTORNO
-# ==================================================
-
 SEMILLA = 10
 TIEMPO = 40
 
-# ==================================================
 # 2. COVARIANZA DE ODOMETRIA
-# ==================================================
-
 V = np.diag([
     0.02,
     np.deg2rad(0.5)
 ])**2
 
-# ==================================================
 # 3. CREAR ROBOT
-# ==================================================
-
 robot = Bicycle(
     covar=V,
     animation="car",
     workspace=10
 )
 
-# ==================================================
 # 4. CREAR MAPA REAL
-# ==================================================
-
 mapa = LandmarkMap(
     20,
     workspace=10,
@@ -59,10 +40,7 @@ robot.control = RandomPath(
     seed=SEMILLA
 )
 
-# ==================================================
 # 5. CONFIGURAR SENSOR
-# ==================================================
-
 W = np.diag([
     0.1,
     np.deg2rad(1)
@@ -78,20 +56,14 @@ sensor = RangeBearingSensor(
     seed=SEMILLA
 )
 
-# ==================================================
 # 6. INCERTIDUMBRE INICIAL
-# ==================================================
-
 P0 = np.diag([
     0.05,
     0.05,
     np.deg2rad(0.5)
 ])**2
 
-# ==================================================
 # 7. CONFIGURAR EKF-SLAM
-# ==================================================
-
 slam = EKF(
     robot=(robot, V),
     P0=P0,
@@ -99,10 +71,7 @@ slam = EKF(
     map=None
 )
 
-# ==================================================
 # 8. EJECUTAR EXPLORACION ANIMADA
-# ==================================================
-
 print("Iniciando exploracion SLAM...")
 print("El robot esta construyendo el mapa.")
 
@@ -113,10 +82,7 @@ slam.run(
 
 print("Exploracion finalizada.")
 
-# ==================================================
 # 9. MAPA REAL VS MAPA ESTIMADO
-# ==================================================
-
 fig, ax = plt.subplots(figsize=(11, 9))
 
 # Mapa real
@@ -140,10 +106,7 @@ plt.ylabel("Y [m]")
 plt.grid(True)
 plt.axis("equal")
 plt.legend()
-# ==================================================
 # 10. GRAFICA DE INCERTIDUMBRE
-# ==================================================
-
 fig, ax = plt.subplots(figsize=(10, 5))
 
 tiempo = slam.get_t()
@@ -161,10 +124,7 @@ ax.set_xlabel("Tiempo [s]")
 ax.set_ylabel("Norma de covarianza")
 ax.grid(True)
 
-# ==================================================
 # 11. RESULTADOS
-# ==================================================
-
 print("\n========== RESULTADOS SLAM ==========")
 
 print("Pose estimada:")
