@@ -1,11 +1,5 @@
-
-# ============================================
-# PARTE 4: INTRODUCCION A SLAM CON EKF
-# ============================================
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 from roboticstoolbox import (
     Bicycle,
     RandomPath,
@@ -14,19 +8,13 @@ from roboticstoolbox import (
     EKF
 )
 
-# ============================================
 # 1. COVARIANZA DE ODOMETRIA
-# ============================================
-
 V = np.diag([
     0.02,
     np.deg2rad(0.5)
 ])**2
 
-# ============================================
 # 2. CREAR ROBOT
-# ============================================
-
 robot = Bicycle(
     covar=V,
     animation=None,
@@ -38,20 +26,14 @@ robot.control = RandomPath(
     seed=0
 )
 
-# ============================================
 # 3. CREAR MAPA REAL
-# ============================================
-
 mapa = LandmarkMap(
     20,
     workspace=10,
     seed=0
 )
 
-# ============================================
 # 4. CONFIGURAR SENSOR
-# ============================================
-
 W = np.diag([
     0.1,
     np.deg2rad(1)
@@ -66,20 +48,14 @@ sensor = RangeBearingSensor(
     seed=0
 )
 
-# ============================================
 # 5. COVARIANZA INICIAL
-# ============================================
-
 P0 = np.diag([
     0.05,
     0.05,
     np.deg2rad(0.5)
 ])**2
 
-# ============================================
 # 6. CONFIGURAR EKF-SLAM
-# ============================================
-
 slam = EKF(
     robot=(robot, V),
     P0=P0,
@@ -88,16 +64,10 @@ slam = EKF(
     animate=False
 )
 
-# ============================================
 # 7. EJECUTAR SIMULACION
-# ============================================
-
 slam.run(T=40)
 
-# ============================================
 # 8. GRAFICAR MAPA Y TRAYECTORIAS
-# ============================================
-
 plt.figure(figsize=(11, 8))
 
 # Mapa real
@@ -122,10 +92,7 @@ plt.grid(True)
 plt.axis('equal')
 plt.legend()
 
-# ============================================
 # 9. GRAFICAR INCERTIDUMBRE
-# ============================================
-
 plt.figure(figsize=(10, 6))
 
 plt.plot(
@@ -140,10 +107,7 @@ plt.ylabel('Norma de covarianza')
 plt.title('Evolucion de incertidumbre en EKF-SLAM')
 plt.grid(True)
 
-# ============================================
 # 10. RESULTADOS NUMERICOS
-# ============================================
-
 print("Pose estimada del robot:")
 print(slam.x_est[:3])
 
@@ -161,9 +125,4 @@ print(slam.get_Pnorm()[0])
 
 print("\nIncertidumbre final:")
 print(slam.get_Pnorm()[-1])
-
-# ============================================
-# 11. MOSTRAR GRAFICAS
-# ============================================
-
 plt.show()
