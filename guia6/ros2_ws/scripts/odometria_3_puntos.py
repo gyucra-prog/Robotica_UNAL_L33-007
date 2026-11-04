@@ -2,17 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from roboticstoolbox import Bicycle
 
-# =========================================
 # 1. Configuración del ruido
-# =========================================
 V = np.diag([0.2, np.deg2rad(0.5)]) ** 2
 
 robot_ruidoso = Bicycle(covar=V)
 robot_ideal = Bicycle(covar=np.zeros((2, 2)))
 
-# =========================================
 # 2. Definición de puntos y estado
-# =========================================
 puntos = np.array([[4.0, 0.0], [4.0, 3.0], [0.0, 3.0]])
 
 pose_real = np.array([0.0, 0.0, 0.0])
@@ -21,18 +17,14 @@ pose_ideal = np.array([0.0, 0.0, 0.0])
 trayectoria_real = [pose_real.copy()]
 trayectoria_ideal = [pose_ideal.copy()]
 
-# =========================================
 # 3. Parámetros del controlador
-# =========================================
 velocidad = 0.5
 distancia_minima = 0.15
 L = 1.0  # Distancia entre ejes
 gamma_max = np.deg2rad(30)
 max_iter_por_punto = 1000
 
-# =========================================
 # 4. Bucle de control
-# =========================================
 for i, punto in enumerate(puntos):
     iteraciones = 0
 
@@ -73,9 +65,7 @@ for i, punto in enumerate(puntos):
         trayectoria_ideal.append(pose_ideal.copy())
         trayectoria_real.append(pose_real.copy())
 
-# =========================================
 # 5. Cálculo de métricas
-# =========================================
 trayectoria_ideal = np.array(trayectoria_ideal)
 trayectoria_real = np.array(trayectoria_real)
 
@@ -83,9 +73,7 @@ error_posicion = np.linalg.norm(
     trayectoria_real[:, :2] - trayectoria_ideal[:, :2], axis=1
 )
 
-# =========================================
 # 6. Gráficas
-# =========================================
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
 # Trayectoria
@@ -129,9 +117,7 @@ ax2.grid(True)
 plt.tight_layout()
 plt.show()
 
-# =========================================
 # 7. Imprimir resultados
-# =========================================
 print(f"\n--- Resumen ---")
 print(f"Error Final:   {error_posicion[-1]:.3f} m")
 print(f"Error Máximo:  {np.max(error_posicion):.3f} m")
