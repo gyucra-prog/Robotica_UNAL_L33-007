@@ -1,11 +1,5 @@
-
-# ============================================
-# PARTE 3: EKF CON LANDMARKS
-# ============================================
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 from roboticstoolbox import (
     Bicycle,
     EKF,
@@ -13,29 +7,20 @@ from roboticstoolbox import (
     RangeBearingSensor
 )
 
-# ============================================
 # 1. COVARIANZA DE ODOMETRIA
-# ============================================
-
 V = np.diag([
     0.02,
     np.deg2rad(0.5)
 ])**2
 
-# ============================================
 # 2. CREAR ROBOT
-# ============================================
-
 robot = Bicycle(
     covar=V,
     animation=None,
     workspace=10
 )
 
-# ============================================
 # 3. DEFINIR LOS CUATRO PUNTOS
-# ============================================
-
 puntos = np.array([
     [2.0, 2.0],
     [8.0, 2.0],
@@ -43,10 +28,7 @@ puntos = np.array([
     [2.0, 8.0]
 ])
 
-# ============================================
 # 4. CONTROLADOR DE TRAYECTORIA
-# ============================================
-
 indice = 0
 
 def control_waypoints(robot, t, x):
@@ -105,29 +87,20 @@ def control_waypoints(robot, t, x):
 
 robot.control = control_waypoints
 
-# ============================================
 # 5. CREAR MAPA DE LANDMARKS
-# ============================================
-
 mapa = LandmarkMap(
     20,
     workspace=10,
     seed=0
 )
 
-# ============================================
 # 6. COVARIANZA DEL SENSOR
-# ============================================
-
 W = np.diag([
     0.1,
     np.deg2rad(1)
 ])**2
 
-# ============================================
 # 7. CONFIGURAR SENSOR RANGE-BEARING
-# ============================================
-
 sensor = RangeBearingSensor(
     robot=robot,
     map=mapa,
@@ -137,20 +110,14 @@ sensor = RangeBearingSensor(
     seed=0
 )
 
-# ============================================
 # 8. COVARIANZA INICIAL
-# ============================================
-
 P0 = np.diag([
     0.05,
     0.05,
     np.deg2rad(0.5)
 ])**2
 
-# ============================================
 # 9. CONFIGURAR EKF
-# ============================================
-
 ekf = EKF(
     robot=(robot, V),
     P0=P0,
@@ -158,16 +125,10 @@ ekf = EKF(
     sensor=(sensor, W)
 )
 
-# ============================================
 # 10. EJECUTAR SIMULACION
-# ============================================
-
 ekf.run(T=40)
 
-# ============================================
 # 11. GRAFICAR TRAYECTORIAS
-# ============================================
-
 plt.figure(figsize=(10, 8))
 
 mapa.plot()
@@ -198,10 +159,7 @@ plt.ylabel('Posicion Y [m]')
 plt.grid(True)
 plt.legend()
 
-# ============================================
 # 12. GRAFICAR INCERTIDUMBRE
-# ============================================
-
 plt.figure(figsize=(10, 5))
 
 plt.plot(
@@ -216,10 +174,7 @@ plt.ylabel('Norma de covarianza')
 plt.title('Incertidumbre del EKF con correcciones')
 plt.grid(True)
 
-# ============================================
 # 13. RESULTADOS NUMERICOS
-# ============================================
-
 print("Pose estimada final:")
 print(ekf.x_est)
 
@@ -231,9 +186,4 @@ print(ekf.get_Pnorm()[0])
 
 print("\nIncertidumbre final:")
 print(ekf.get_Pnorm()[-1])
-
-# ============================================
-# 14. MOSTRAR RESULTADOS
-# ============================================
-
 plt.show()
