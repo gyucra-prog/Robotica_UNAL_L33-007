@@ -1,0 +1,1 @@
+/home/lee/robotica/guia6/ros2_ws/src/localization_lab/config/trajectory_builder_2d.lua

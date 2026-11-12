@@ -1,0 +1,23 @@
+[5.020s] Invoking command in '/home/lee/robotica/guia6/ros2_ws/build/localization_lab': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build --no-deps symlink_data --force
+[6.093s] running develop
+[6.720s] running egg_info
+[6.789s] writing localization_lab.egg-info/PKG-INFO
+[6.791s] writing dependency_links to localization_lab.egg-info/dependency_links.txt
+[6.792s] writing entry points to localization_lab.egg-info/entry_points.txt
+[6.792s] writing requirements to localization_lab.egg-info/requires.txt
+[6.793s] writing top-level names to localization_lab.egg-info/top_level.txt
+[6.906s] reading manifest file 'localization_lab.egg-info/SOURCES.txt'
+[6.910s] writing manifest file 'localization_lab.egg-info/SOURCES.txt'
+[6.987s] running build_ext
+[6.989s] Creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization-lab.egg-link (link to .)
+[6.991s] Installing simple_controller script to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/localization_lab
+[6.992s] 
+[6.992s] Installed /home/lee/robotica/guia6/ros2_ws/build/localization_lab
+[6.992s] running symlink_data
+[6.992s] symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/resource/localization_lab -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index/packages
+[6.994s] symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/package.xml -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab
+[6.994s] symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/launch/cartographer.launch.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/launch
+[6.994s] symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/map_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+[6.995s] symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/trajectory_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+[6.996s] error: [Errno 2] No such file or directory: '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config/trajectory_builder_3d.lua'
+[7.101s] Invoked command in '/home/lee/robotica/guia6/ros2_ws/build/localization_lab' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build --no-deps symlink_data --force

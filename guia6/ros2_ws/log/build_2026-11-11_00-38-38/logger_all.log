@@ -1,0 +1,149 @@
+[0.344s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'localization_lab', '--symlink-install']
+[0.345s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['localization_lab'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x704a1dba7b60>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x704a1dba79b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x704a1dba79b0>>)
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.469s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.470s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.470s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lee/robotica/guia6/ros2_ws'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.546s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.547s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.548s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.549s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.550s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[0.551s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.552s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extensions ['ignore', 'ignore_ament_install']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extension 'ignore'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extension 'ignore_ament_install'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extensions ['colcon_pkg']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extension 'colcon_pkg'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extensions ['colcon_meta']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extension 'colcon_meta'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(src/localization_lab) by extension 'ros'
+[0.561s] DEBUG:colcon.colcon_core.package_identification:Package 'src/localization_lab' with type 'ros.ament_python' and name 'localization_lab'
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.561s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.610s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.615s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/lee/robotica/guia6/ros2_ws/install
+[0.616s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/lee/robotica/TurtleBot/install
+[0.617s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/lee/ros2_ws/install
+[0.621s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 486 installed packages in /opt/ros/jazzy
+[0.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'cmake_target' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'cmake_clean_cache' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'cmake_clean_first' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'cmake_force_configure' from command line to 'False'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'ament_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'catkin_cmake_args' from command line to 'None'
+[0.807s] Level 5:colcon.colcon_core.verb:set package 'localization_lab' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.807s] DEBUG:colcon.colcon_core.verb:Building package 'localization_lab' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/robotica/guia6/ros2_ws/build/localization_lab', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/robotica/guia6/ros2_ws/install/localization_lab', 'merge_install': False, 'path': '/home/lee/robotica/guia6/ros2_ws/src/localization_lab', 'symlink_install': True, 'test_result_base': None}
+[0.808s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.810s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.811s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lee/robotica/guia6/ros2_ws/src/localization_lab' with build type 'ament_python'
+[0.811s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization_lab', 'ament_prefix_path')
+[0.816s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/hook/ament_prefix_path.ps1'
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/hook/ament_prefix_path.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/hook/ament_prefix_path.sh'
+[0.824s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.825s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.807s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lee/robotica/guia6/ros2_ws/src/localization_lab'
+[1.807s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.807s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.017s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: register, bdist_rpm, develop, editable_wheel, build_ext, upload_docs, install_data, egg_info, install_scripts, dist_info, alias, test, install_headers, install_lib, bdist_wheel, compile_catalog, build_scripts, bdist_egg, saveopts, update_catalog, sdist, symlink_data, check, build_py, upload, extract_messages, install_egg_info, setopt, bdist, bdist_dumb, rotate, easy_install, install, init_catalog, clean, build, build_clib
+[5.605s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --record, --always-unzip, --always-copy, --help, --allow-hosts, --verbose, --index-url, --install-layout, --upgrade, --no-user-cfg, --version, --exclude-scripts, --dry-run, --optimize, --force-installation-into-system-dir, --site-dirs, --build-directory, --uninstall, --egg-path, --zip-ok, --install-dir, --no-deps, --find-links, --local-snapshots-ok, --no-find-links, --script-dir, --prefix, --editable, --quiet, --user, --multi-version
+[5.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/robotica/guia6/ros2_ws/build/localization_lab': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build --no-deps symlink_data
+[7.907s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization_lab', 'pythonpath_develop')
+[7.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/share/localization_lab/hook/pythonpath_develop.ps1'
+[7.909s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/share/localization_lab/hook/pythonpath_develop.dsv'
+[7.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/share/localization_lab/hook/pythonpath_develop.sh'
+[7.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/robotica/guia6/ros2_ws/build/localization_lab' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build --no-deps symlink_data
+[7.917s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab' for CMake module files
+[7.918s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab' for CMake config files
+[7.919s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib'
+[7.920s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/bin'
+[7.920s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/pkgconfig/localization_lab.pc'
+[7.920s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages'
+[7.920s] Level 1:colcon.colcon_core.shell:create_environment_hook('localization_lab', 'pythonpath')
+[7.921s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/hook/pythonpath.ps1'
+[7.922s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/hook/pythonpath.dsv'
+[7.923s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/hook/pythonpath.sh'
+[7.925s] Level 1:colcon.colcon_core.environment:checking '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/bin'
+[7.925s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(localization_lab)
+[7.925s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/package.ps1'
+[7.928s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/package.dsv'
+[7.930s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/package.sh'
+[7.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/package.bash'
+[7.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/package.zsh'
+[7.965s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/colcon-core/packages/localization_lab)
+[7.967s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.967s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.967s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.968s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.984s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.984s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.984s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.029s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.029s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robotica/guia6/ros2_ws/install/local_setup.ps1'
+[8.031s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/robotica/guia6/ros2_ws/install/_local_setup_util_ps1.py'
+[8.035s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robotica/guia6/ros2_ws/install/setup.ps1'
+[8.041s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robotica/guia6/ros2_ws/install/local_setup.sh'
+[8.046s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/robotica/guia6/ros2_ws/install/_local_setup_util_sh.py'
+[8.052s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robotica/guia6/ros2_ws/install/setup.sh'
+[8.056s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robotica/guia6/ros2_ws/install/local_setup.bash'
+[8.058s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robotica/guia6/ros2_ws/install/setup.bash'
+[8.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/robotica/guia6/ros2_ws/install/local_setup.zsh'
+[8.066s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/robotica/guia6/ros2_ws/install/setup.zsh'

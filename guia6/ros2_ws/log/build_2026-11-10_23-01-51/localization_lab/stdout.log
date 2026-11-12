@@ -1,0 +1,20 @@
+running develop
+running egg_info
+writing localization_lab.egg-info/PKG-INFO
+writing dependency_links to localization_lab.egg-info/dependency_links.txt
+writing entry points to localization_lab.egg-info/entry_points.txt
+writing requirements to localization_lab.egg-info/requires.txt
+writing top-level names to localization_lab.egg-info/top_level.txt
+reading manifest file 'localization_lab.egg-info/SOURCES.txt'
+writing manifest file 'localization_lab.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization-lab.egg-link (link to .)
+Installing simple_controller script to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/localization_lab
+
+Installed /home/lee/robotica/guia6/ros2_ws/build/localization_lab
+running symlink_data
+symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/resource/localization_lab -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index/packages
+symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/package.xml -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab
+symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/launch/cartographer.launch.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/launch
+symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/map_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config
+symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/trajectory_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config

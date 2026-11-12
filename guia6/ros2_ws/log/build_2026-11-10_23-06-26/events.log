@@ -1,0 +1,95 @@
+[0.000000] (-) TimerEvent: {}
+[0.000308] (localization_lab) JobQueued: {'identifier': 'localization_lab', 'dependencies': OrderedDict()}
+[0.000411] (localization_lab) JobStarted: {'identifier': 'localization_lab'}
+[0.098126] (-) TimerEvent: {}
+[0.204554] (-) TimerEvent: {}
+[0.305127] (-) TimerEvent: {}
+[0.405748] (-) TimerEvent: {}
+[0.506991] (-) TimerEvent: {}
+[0.607483] (-) TimerEvent: {}
+[0.708191] (-) TimerEvent: {}
+[0.808806] (-) TimerEvent: {}
+[0.910033] (-) TimerEvent: {}
+[1.011001] (-) TimerEvent: {}
+[1.111869] (-) TimerEvent: {}
+[1.212622] (-) TimerEvent: {}
+[1.314862] (-) TimerEvent: {}
+[1.415901] (-) TimerEvent: {}
+[1.516728] (-) TimerEvent: {}
+[1.617311] (-) TimerEvent: {}
+[1.718231] (-) TimerEvent: {}
+[1.819273] (-) TimerEvent: {}
+[1.920215] (-) TimerEvent: {}
+[2.021090] (-) TimerEvent: {}
+[2.122111] (-) TimerEvent: {}
+[2.222584] (-) TimerEvent: {}
+[2.323149] (-) TimerEvent: {}
+[2.424077] (-) TimerEvent: {}
+[2.525201] (-) TimerEvent: {}
+[2.626022] (-) TimerEvent: {}
+[2.726827] (-) TimerEvent: {}
+[2.827333] (-) TimerEvent: {}
+[2.929346] (-) TimerEvent: {}
+[3.030122] (-) TimerEvent: {}
+[3.130983] (-) TimerEvent: {}
+[3.231437] (-) TimerEvent: {}
+[3.334005] (-) TimerEvent: {}
+[3.434653] (-) TimerEvent: {}
+[3.535968] (-) TimerEvent: {}
+[3.596348] (localization_lab) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/build', '--no-deps', 'symlink_data'], 'cwd': '/home/lee/robotica/guia6/ros2_ws/build/localization_lab', 'env': OrderedDict({'GZ_SIM_SYSTEM_PLUGIN_PATH': '/opt/ros/jazzy/lib', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'lee', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/lee', 'OLDPWD': '/home/lee/robotica/guia6/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/lee/.nvm/versions/node/v24.21.0/bin', 'NVM_INC': '/home/lee/.nvm/versions/node/v24.21.0/include/node', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2916', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/lee/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lee/robotica/guia6/ros2_ws/install:/home/lee/robotica/TurtleBot/install:/home/lee/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'lee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lee', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/go/bin:/home/lee/go/bin:/home/lee/.nvm/versions/node/v24.21.0/bin:/home/lee/go/bin:/home/lee/go/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/lee/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/lee/.local/bin', 'SESSION_MANAGER': 'local/lee-VMware-Virtual-Platform:@/tmp/.ICE-unix/2873,unix/lee-VMware-Virtual-Platform:/tmp/.ICE-unix/2873', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5241a9d6_4569_49e4_9c58_a9c909e2c934', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'es_ES.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.5K8NY3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.131', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lee/robotica/guia6/ros2_ws/install/localization_lab:/home/lee/robotica/TurtleBot/install/tb3_control:/home/lee/robotica/TurtleBot/install/reactive_navigator:/home/lee/robotica/TurtleBot/install/lab_robotica:/home/lee/ros2_ws/install/pose_lab:/home/lee/ros2_ws/install/imu_orientation2:/home/lee/ros2_ws/install/imu_orientation:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lee/robotica/guia6/ros2_ws/build/localization_lab', 'TURTLEBOT3_MODEL': 'burger', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:/home/lee/robotica/TurtleBot/install/tb3_control/lib/python3.12/site-packages:/home/lee/robotica/TurtleBot/install/reactive_navigator/lib/python3.12/site-packages:/home/lee/robotica/TurtleBot/build/lab_robotica:/home/lee/robotica/TurtleBot/install/lab_robotica/lib/python3.12/site-packages:/home/lee/ros2_ws/install/pose_lab/lib/python3.12/site-packages:/home/lee/ros2_ws/install/imu_orientation2/lib/python3.12/site-packages:/home/lee/ros2_ws/install/imu_orientation/lib/python3.12/site-packages:/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[3.636687] (-) TimerEvent: {}
+[3.737186] (-) TimerEvent: {}
+[3.837797] (-) TimerEvent: {}
+[3.938258] (-) TimerEvent: {}
+[4.038860] (-) TimerEvent: {}
+[4.139517] (-) TimerEvent: {}
+[4.240226] (-) TimerEvent: {}
+[4.340993] (-) TimerEvent: {}
+[4.441794] (-) TimerEvent: {}
+[4.504927] (localization_lab) StdoutLine: {'line': b'running develop\n'}
+[4.542449] (-) TimerEvent: {}
+[4.643470] (-) TimerEvent: {}
+[4.744882] (-) TimerEvent: {}
+[4.845744] (-) TimerEvent: {}
+[4.946134] (-) TimerEvent: {}
+[5.046539] (-) TimerEvent: {}
+[5.147591] (-) TimerEvent: {}
+[5.189723] (localization_lab) StdoutLine: {'line': b'running egg_info\n'}
+[5.190020] (localization_lab) StdoutLine: {'line': b'creating localization_lab.egg-info\n'}
+[5.248303] (localization_lab) StdoutLine: {'line': b'writing localization_lab.egg-info/PKG-INFO\n'}
+[5.248550] (-) TimerEvent: {}
+[5.249879] (localization_lab) StdoutLine: {'line': b'writing dependency_links to localization_lab.egg-info/dependency_links.txt\n'}
+[5.251096] (localization_lab) StdoutLine: {'line': b'writing entry points to localization_lab.egg-info/entry_points.txt\n'}
+[5.253270] (localization_lab) StdoutLine: {'line': b'writing requirements to localization_lab.egg-info/requires.txt\n'}
+[5.254177] (localization_lab) StdoutLine: {'line': b'writing top-level names to localization_lab.egg-info/top_level.txt\n'}
+[5.295407] (localization_lab) StdoutLine: {'line': b"writing manifest file 'localization_lab.egg-info/SOURCES.txt'\n"}
+[5.348735] (-) TimerEvent: {}
+[5.410183] (localization_lab) StdoutLine: {'line': b"reading manifest file 'localization_lab.egg-info/SOURCES.txt'\n"}
+[5.411872] (localization_lab) StdoutLine: {'line': b"writing manifest file 'localization_lab.egg-info/SOURCES.txt'\n"}
+[5.449132] (-) TimerEvent: {}
+[5.474337] (localization_lab) StdoutLine: {'line': b'running build_ext\n'}
+[5.474596] (localization_lab) StdoutLine: {'line': b'Creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization-lab.egg-link (link to .)\n'}
+[5.476012] (localization_lab) StdoutLine: {'line': b'Installing simple_controller script to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/localization_lab\n'}
+[5.477218] (localization_lab) StdoutLine: {'line': b'\n'}
+[5.477500] (localization_lab) StdoutLine: {'line': b'Installed /home/lee/robotica/guia6/ros2_ws/build/localization_lab\n'}
+[5.477676] (localization_lab) StdoutLine: {'line': b'running symlink_data\n'}
+[5.478127] (localization_lab) StdoutLine: {'line': b'creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index\n'}
+[5.478309] (localization_lab) StdoutLine: {'line': b'creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index\n'}
+[5.478402] (localization_lab) StdoutLine: {'line': b'creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index/packages\n'}
+[5.478484] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/resource/localization_lab -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/ament_index/resource_index/packages\n'}
+[5.478574] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/package.xml -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab\n'}
+[5.480295] (localization_lab) StdoutLine: {'line': b'creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/launch\n'}
+[5.480514] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/launch/cartographer.launch.py -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/launch\n'}
+[5.480618] (localization_lab) StdoutLine: {'line': b'creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.481054] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/map_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.483102] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/trajectory_builder.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.483305] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/trajectory_builder_3d.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.483395] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/pose_graph.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.483478] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/cartographer.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.483560] (localization_lab) StdoutLine: {'line': b'symbolically linking /home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/trajectory_builder_2d.lua -> /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config\n'}
+[5.483641] (localization_lab) StdoutLine: {'line': b'creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/rviz\n'}
+[5.549621] (-) TimerEvent: {}
+[5.578278] (localization_lab) CommandEnded: {'returncode': 0}
+[5.661309] (-) TimerEvent: {}
+[5.669121] (localization_lab) JobEnded: {'identifier': 'localization_lab', 'rc': 0}
+[5.671982] (-) EventReactorShutdown: {}

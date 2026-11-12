@@ -1,0 +1,1 @@
+error: [Errno 17] File exists: '/home/lee/robotica/guia6/ros2_ws/build/localization_lab/config/cartographer.lua' -> '/home/lee/robotica/guia6/ros2_ws/install/localization_lab/share/localization_lab/config/cartographer.lua'

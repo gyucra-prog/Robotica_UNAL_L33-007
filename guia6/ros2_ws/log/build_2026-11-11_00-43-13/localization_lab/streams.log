@@ -1,0 +1,17 @@
+[3.724s] Invoking command in '/home/lee/robotica/guia6/ros2_ws/build/localization_lab': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build --no-deps symlink_data
+[4.657s] running develop
+[5.269s] running egg_info
+[5.340s] writing localization_lab.egg-info/PKG-INFO
+[5.340s] writing dependency_links to localization_lab.egg-info/dependency_links.txt
+[5.341s] writing entry points to localization_lab.egg-info/entry_points.txt
+[5.341s] writing requirements to localization_lab.egg-info/requires.txt
+[5.341s] writing top-level names to localization_lab.egg-info/top_level.txt
+[5.452s] reading manifest file 'localization_lab.egg-info/SOURCES.txt'
+[5.454s] writing manifest file 'localization_lab.egg-info/SOURCES.txt'
+[5.525s] running build_ext
+[5.526s] Creating /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages/localization-lab.egg-link (link to .)
+[5.527s] Installing simple_controller script to /home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/localization_lab
+[5.528s] 
+[5.528s] Installed /home/lee/robotica/guia6/ros2_ws/build/localization_lab
+[5.528s] running symlink_data
+[5.634s] Invoked command in '/home/lee/robotica/guia6/ros2_ws/build/localization_lab' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/lee/robotica/guia6/ros2_ws/build/localization_lab/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/lee/robotica/guia6/ros2_ws/install/localization_lab/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/lee/robotica/guia6/ros2_ws/build/localization_lab/build --no-deps symlink_data
